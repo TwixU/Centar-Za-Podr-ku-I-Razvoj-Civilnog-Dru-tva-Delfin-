@@ -1,0 +1,97 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* Info Card */
+.contact-info-card,
+.contact-form-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-info-card h2,
+.contact-form-card h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.info-icon {
+    color: var(--color-primary);
+    min-width: 24px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-text);
+}
+
+.info-item p {
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.info-item small {
+    color: var(--color-text-light);
+}
+
+.map-placeholder {
+    margin-top: 2rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    height: 250px;
+    background-color: #eee;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 109, 119, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
